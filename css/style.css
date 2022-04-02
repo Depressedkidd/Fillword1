@@ -1,0 +1,131 @@
+
+body {
+
+    background: #0f2027;
+    background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+    overflow: hidden;
+  }
+  .form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 60%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+body {
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    font-family: Arial;
+    color: #fff;
+    background: #313130;
+}
+
+button {
+    cursor: pointer;
+}
+
+.press-start-text {
+    color: red;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    font-size: 1em;
+}
+
+
+h1 {
+    color: black;
+}
+
+.main-menu {
+    text-align: center;
+}
+
+.main-menu h2 {
+    font-weight: bold;
+}
+select{
+    margin-top: 15px;
+}
+
+.rules-list {
+    list-style: none;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia;
+}
+
+.start-button {
+    margin-top: 10px;
+    text-align: center;
+    background: none;
+    color: aqua;
+    border: none;
+}
+.start-button:hover{
+    color: red;
+}
+
+
+.letter.selected {
+    opacity: 0.5;
+}
+
+
+.timer {
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    margin: auto;
+    text-align: end;
+}
+
+.win-scene {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.win-scene ol {
+    width: 480px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.record-time {
+    float: left;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-in 1 forwards;
+}

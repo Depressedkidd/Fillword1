@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Fill-word game</title>
+</head>
+
+<body>
+    <div class="content" id="content-id">
+        <section class="main-menu" id="main-menu_id">
+            <h1 style="color: aliceblue;">Fill-word game</h1>
+            <section class="greeting">
+                <h3>Hello!</h3>
+                <ps style="font-family: Georgia;">Try to make up words from letters</p>
+            </section>
+            <section class="rules">
+                <h3>How to play:</h3>
+                <ol class="rules-list">
+                    <li>If you press the letter it is highlighted.</li>
+                    <li>Then select a standing letter next to it.</li>
+                    <li>If these letters form the desired word, it is counted.</li>
+                    <li>The player that finds all words wins!</li>
+                    <li>Good luck and have fun!</li>
+                </ol>
+            </section>
+            <section class="game-options">
+                <h3>Game Options</h3>
+                <form id="user_form">
+                    <input class="form__input" type="text" name="nickname" id="nickname-id" placeholder="Nickname" maxlength=15>    
+                    <label for="select-fild-size-id">Select field size</label>
+                    <select name="selectSize" id="select-size-id">
+                        <option value=3>3x3</option>
+                        <option value=5>5x5</option>
+                        <option value=10>10x10</option>
+                    </select>
+                    <select name="selectCategories" id="select-categories" >
+                        <option value=1>kino</option>
+                        <option value=2>Anime</option>
+                        <option value=3>Music</option>
+                    </select>
+                </form>
+                <button class="start-button" id="StartHard" name="StartHard" OnClick="GameInterface.startGame()">Start</button>
+            </section>
+        </section>
+        <div class="timer" id="timer_id"></div>
+        <section class="game-scene" id="game-scene_id" hidden>
+        </section>
+        <section class="win-scene" id="win-scene_id" hidden>
+            <h3>Congratulation </br> You win!</h3>
+            <a href="index.html">START NEW GAME</a>
+            <section id="records-table"></section>
+        </section>
+    </div>
+</body>
+<script src="js/game.js"></script>
+<script>GameInterface.loadLastUserDataFromStorageToInputs()</script>
+<script src="js/onResizer.js"></script>
+
+</html>
