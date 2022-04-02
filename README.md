@@ -4,7 +4,7 @@ Kambarov Atay
 
 Nogurbekov Salim
 
-Sulfibaeva Bermet 
+Zulfibaeva Bermet 
 
 Tashkulov Nurislam 
 
